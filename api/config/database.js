@@ -3,9 +3,9 @@ import mongoose from 'mongoose';
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/parking_portal');
-    console.log('[DB] ✅ MongoDB connected successfully');
+    console.log(' MongoDB connected successfully');
   } catch (err) {
-    console.log('[DB] ❌ MongoDB connection error:', err.message);
+    console.log(' MongoDB connection error:', err.message);
     process.exit(1);
   }
 };
