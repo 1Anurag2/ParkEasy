@@ -1,0 +1,174 @@
+.spot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.spot-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+.spot-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.spot-card.booked {
+  opacity: 0.65;
+}
+
+.spot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.spot-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.spot-price span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.spot-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.status-available {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-maintenance {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-reserved {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* NEW CLASSES */
+.checkout-form {
+  margin-top: 1rem;
+}
+
+.card-element-wrapper {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.checkout-error {
+  color: #ef4444;
+  margin-bottom: 1rem;
+}
+
+.checkout-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.booking-section {
+  padding: 4rem 0;
+}
+
+.booking-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.suggest-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.spot-booked-opacity {
+  opacity: 0.7;
+}
+
+.spot-title-row {
+  color: white;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spot-type {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.spot-location {
+  color: var(--text-muted);
+}
+
+.spot-ev-charge {
+  color: #10B981;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.payment-section {
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .spot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .spot-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,18 @@
+.nav-gate-link {
+  color: #34d399 !important;
+}
+
+.logo img {
+  height: 42px;
+  margin-left: 0.5rem;
+}
+
+.nav-logout-btn {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.85rem !important;
+}
+
+.nav-signup-btn {
+  padding: 0.55rem 1.2rem !important;
+  font-size: 0.9rem !important;
+}

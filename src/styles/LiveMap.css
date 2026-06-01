@@ -1,0 +1,174 @@
+.live-map-section {
+  padding: 2rem 0;
+}
+
+.live-map-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.live-map-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.stats-card {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat-block {
+  text-align: center;
+}
+
+.stat-total {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+}
+
+.stat-available {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #34d399;
+}
+
+.stat-occupied {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f87171;
+}
+
+.stat-label-small {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.legend-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+.legend-item img {
+  width: 36px;
+  height: 36px;
+}
+
+.legend-box-available {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: rgba(16, 185, 129, 0.3);
+  border: 1px solid #34d399;
+}
+
+.legend-box-occupied {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: rgba(239, 68, 68, 0.3);
+  border: 1px solid #f87171;
+}
+
+.loading-state,
+.empty-state {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+}
+
+.spinner-centered {
+  margin: 0 auto 1rem;
+}
+
+.floor-card {
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.floor-header {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.floor-availability {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.floor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 0.75rem;
+}
+
+.spot-box {
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.spot-box-available {
+  border: 2px solid rgba(16, 185, 129, 0.6);
+  background: rgba(16, 185, 129, 0.12);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.15);
+}
+
+.spot-box-occupied {
+  border: 2px solid rgba(239, 68, 68, 0.6);
+  background: rgba(239, 68, 68, 0.15);
+  box-shadow: none;
+}
+
+.spot-icon {
+  font-size: 20px;
+}
+
+.spot-id-available {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #34d399;
+}
+
+.spot-id-occupied {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #f87171;
+}
+
+.spot-status {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

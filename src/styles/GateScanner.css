@@ -1,0 +1,141 @@
+.gate-section {
+  padding: 2.5rem 0;
+}
+
+.gate-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.gate-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.gate-container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.gate-card {
+  padding: 2.5rem !important;
+}
+
+.gate-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(79, 70, 229, 0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+.gate-info-icon {
+  flex-shrink: 0;
+}
+
+.gate-info-text {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.gate-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.gate-action-btn {
+  flex: 1;
+  padding: 0.85rem !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.gate-result {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+}
+
+.gate-result-success {
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.gate-result-error {
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.gate-result-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.gate-result-status-success {
+  font-weight: 700;
+  color: #34d399;
+  font-size: 1rem;
+}
+
+.gate-result-status-error {
+  font-weight: 700;
+  color: #f87171;
+  font-size: 1rem;
+}
+
+.gate-result-message {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.gate-billing {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.gate-penalty {
+  color: #fbbf24;
+  font-size: 0.875rem;
+}
+
+.gate-total {
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.gate-log-card {
+  padding: 1.75rem !important;
+  margin-top: 1.5rem;
+}
+
+.gate-log-title {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.gate-log-text {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
